@@ -1,13 +1,257 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: sans-serif;
 }
+
+
+#light {
+  background-color:  #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+}
+
+#dark {
+  background-color: #303952;
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+
+}
+
+.header {
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#light .header {
+  background-color: #786fa6;
+}
+
+#dark .header {
+  background-color: #596275;
+}
+
+.header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  margin-left: 50px;
+}
+
+
+footer {
+  position: sticky;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+.container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+
+.note {
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.create-note {
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 350px;
+  margin: 30px auto 20px auto;
+}
+ 
+#light .note {
+  background-color: #f3a683;
+  box-shadow: 10px 10px 5px #eec9b7;
+}
+
+#dark .note {
+  background-color: #f5cd79;
+  box-shadow: 10px 10px 5px #413e3d;
+}
+
+#light .create-note {
+  background-color:#eec9b7;
+  box-shadow: 10px 10px 10px #f3a683;
+}
+
+#dark .create-note {
+  background-color: #f7d794;
+  box-shadow: 10px 10px 5px #413e3d;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+#light .text-create-note {
+  background-color:#eec9b7;
+}
+
+#dark .text-create-note {
+  background-color: #f7d794;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  outline: none;
+  font-family: none;
+  font-size: 1.1rem;
+
+}
+
+.note-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  color: #596275
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #596275
+}
+
+small {
+  color: #596275
+}
+
+.btn {
+  position: relative;
+  margin-right: 5px;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#light .btn {
+  background-color: #f3a683;
+  color: white;
+}
+
+#dark .btn {
+  background-color: #979797;
+  color: rgb(36, 36, 36);
+}
+
+.btn-del {
+  position: relative;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#light .btn-del {
+  background-color: #eec9b7;
+  color:#cd6048;
+}
+
+#dark .btn-del {
+  color: rgb(36, 36, 36);
+} 
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+}
+
+.search input {
+  border: none;
+  background-color: #ccc;
+}
+
+.switch {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px 
+}
+
+.switch label {
+  margin: 10px;
+}
+
+#light .switch label {
+  color: #596275;
+}
+
+#dark .switch label {
+  color: silver;
+}
+
+/* .form-container, .login-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+} */
+
+
+
+
